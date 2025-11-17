@@ -746,7 +746,7 @@ async def txt_handler(bot: Client, m: Message):
 
             elif "classplusapp.com/drm/" in url:
                 print("\n🔐 Fetching DRM keys...")
-                api_url = apis["API_DRM"] + url
+                api_url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={url}@botupdatevip4u&user_id={user_id}"] + url
                 max_retries = 2  # Reduced retries
                 retry_count = 0
 
