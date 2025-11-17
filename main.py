@@ -1236,7 +1236,7 @@ async def text_handler(bot: Client, m: Message):
                                 print("Using provided JWT token")
                             
                             # First try with direct URL
-                            response = requests.get(apis["API_CLASSPLUS"], params=params)
+                            response = requests.get(apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={url}@botupdatevip4u&user_id={user_id}"], params=params)
                             
                             if response.status_code == 200:
                                 try:
