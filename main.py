@@ -790,7 +790,7 @@ async def txt_handler(bot: Client, m: Message):
                                 print("Using provided JWT token")
                             
                             # First try with direct URL
-                            response = requests.get(apis["["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"],params=params)
+                            response = requests.get(apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"],params=params)
                             
                             if response.status_code == 200:
                                 try:
