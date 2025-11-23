@@ -690,7 +690,7 @@ async def txt_handler(bot: Client, m: Message):
                 url = url.replace("https://cpvod.testbook.com/", "https://media-cdn.classplusapp.com/drm/")
 
 
-                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"]
+                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"]
                 mpd, keys = helper.get_mps_and_keys2(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
@@ -746,7 +746,7 @@ async def txt_handler(bot: Client, m: Message):
 
             elif "classplusapp.com/drm/" in url:
                 print("\n🔐 Fetching DRM keys...")
-                api_url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"]
+                api_url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"]
                 max_retries = 2  # Reduced retries
                 retry_count = 0
 
@@ -790,7 +790,7 @@ async def txt_handler(bot: Client, m: Message):
                                 print("Using provided JWT token")
                             
                             # First try with direct URL
-                            response = requests.get(apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"], params=params)
+                            response = requests.get(apis["["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"],params=params)
                             
                             if response.status_code == 200:
                                 try:
@@ -828,7 +828,7 @@ async def txt_handler(bot: Client, m: Message):
                 url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
 
             if ".pdf*" in url:
-                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"
+                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"
             
             elif 'encrypted.m' in url:
                 appxkey = url.split('*')[1]
@@ -1132,7 +1132,7 @@ async def text_handler(bot: Client, m: Message):
 
             elif "https://cpvod.testbook.com/" in url:
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"]
+                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"]
                 mpd, keys = helper.get_mps_and_keys2(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
@@ -1191,7 +1191,7 @@ async def text_handler(bot: Client, m: Message):
 
             elif "classplusapp.com/drm/" in url:
                 print("\n🔐 Fetching DRM keys...")
-                api_url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"]
+                api_url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"]
                 max_retries = 2  # Reduced retries
                 retry_count = 0
 
@@ -1219,7 +1219,7 @@ async def text_handler(bot: Client, m: Message):
 
             elif 'media-cdn.classplusapp.com' in url or 'media-cdn-alisg.classplusapp.com' in url or 'media-cdn-a.classplusapp.com' in url or 'videos.classplusapp' in url or 'tencdn.classplusapp' in url: 
                 if 'master.m3u8' in url:
-                    print(f"Processing Classplus URL: {https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8}")
+                    print(f"Processing Classplus URL: {url}")
                     max_retries = 3  # Maximum number of retries
                     retry_count = 0
                     success = False
@@ -1236,7 +1236,7 @@ async def text_handler(bot: Client, m: Message):
                                 print("Using provided JWT token")
                             
                             # First try with direct URL
-                            response = requests.get(apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"], params=params)
+                            response = requests.get(apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"],params=params)
                             
                             if response.status_code == 200:
                                 try:
@@ -1275,7 +1275,7 @@ async def text_handler(bot: Client, m: Message):
                 url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
 
             if ".pdf*" in url:
-                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/media-cdn.classplusapp.com/master.m3u8@botupdatevip4u&user_id=6201066540"
+                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540"
             
             elif 'encrypted.m' in url:
                 appxkey = url.split('*')[1]
