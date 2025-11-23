@@ -690,7 +690,7 @@ async def txt_handler(bot: Client, m: Message):
                 url = url.replace("https://cpvod.testbook.com/", "https://media-cdn.classplusapp.com/drm/")
 
 
-                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={https://media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/d2aa7940e50871edbfc15401b1ea0102/master.m3u8}@botupdatevip4u&user_id={6201066540}"] + url
+                url = apis["https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/68a9797a9973451ecea07191/playlist.m3u8@botupdatevip4u&user_id=6201066540}"
                 mpd, keys = helper.get_mps_and_keys2(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
